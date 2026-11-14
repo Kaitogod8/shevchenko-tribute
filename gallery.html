@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея творів | Тарас Шевченко (1814–1861)</title>
+  <meta name="description" content="Художня галерея Тараса Шевченка: картини олією, акварелі періоду заслання, автопортрети та історичні світлини у високій роздільній здатності з інтерактивним лайтбоксом.">
+  
+  <!-- Open Graph / Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Галерея шедеврів Тараса Шевченка">
+  <meta property="og:description" content="Академік гравіювання, віртуоз сепії та олії. Інтерактивна галерея з коментарями та джерелами.">
+  <meta property="og:image" content="images/kateryna-1842.jpg">
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Unbounded:wght@400;600;700;800;900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Перейти до основного вмісту</a>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Тарас Шевченко Головна">
+        <span class="brand-monogram">ТШ</span>
+        <span>ШЕВЧЕНКО <span class="text-accent">1814–1861</span></span>
+      </a>
+
+      <nav aria-label="Головна навігація">
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">Біографія</a></li>
+          <li><a href="index.html#timeline" class="nav-link">Таймлайн</a></li>
+          <li><a href="index.html#quotes" class="nav-link">Цитати</a></li>
+          <li><a href="gallery.html" class="nav-link active">Галерея робіт</a></li>
+          <li><a href="works.html" class="nav-link">Творчість і спадок</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Перемкнути тему" title="Змінити тему оформлення">
+          ☀️
+        </button>
+        <button class="mobile-menu-toggle" aria-label="Відкрити меню навігації" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section" style="padding-bottom: 20px;">
+      <div class="container">
+        <div class="section-title-wrap reveal">
+          <div class="badge-group" style="margin-bottom: 12px;">
+            <span class="badge">Образотворча спадщина</span>
+            <span class="badge badge-blue">Понад 1 300 робіт</span>
+          </div>
+          <h1 class="section-title">Художній універсум Тараса Шевченка</h1>
+          <p class="section-lead">
+            Мало хто знає, що за життя Шевченка шанували насамперед як першокласного художника, а згодом — удостоїли престижного звання академіка гравіювання. Натисніть на будь-яку роботу, щоб відкрити її в повному масштабі.
+          </p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="gallery-filters reveal" role="toolbar" aria-label="Фільтри творів">
+          <button class="filter-btn active" data-filter="all">Всі роботи (9)</button>
+          <button class="filter-btn" data-filter="portraits">Автопортрети (2)</button>
+          <button class="filter-btn" data-filter="oil">Олійний живопис (3)</button>
+          <button class="filter-btn" data-filter="graphic">Графіка та акварель (3)</button>
+          <button class="filter-btn" data-filter="photo">Історичне фото (1)</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid" id="gallery-container">
+          
+          <!-- Item 1: Катерина -->
+          <article 
+            class="artwork-card reveal" 
+            data-category="oil"
+            data-title="Катерина"
+            data-year="1842 рік"
+            data-technique="Олія на полотні · 93 × 72.3 см"
+            data-desc="Найвідоміша сюжетна картина митця, створена за мотивами однойменної поеми. Шевченко зобразив босоногу вагітну дівчину-покритку Катерину на тлі українського краєвиду, а вдалині на коні віддаляється офіцер-спокусник. Картина стала драматичним алегоричним символом знедоленої та ошуканої імперією України."
+            data-source="Національний музей Тараса Шевченка, Київ (Wikimedia Commons)"
+          >
+            <div class="artwork-thumb-wrap">
+              <img 
+                src="images/kateryna-1842.jpg" 
+                alt="Картина Тараса Шевченка Катерина, 1842 рік" 
+                class="artwork-thumb" 
+                loading="lazy"
+              >
+              <div class="artwork-zoom-hint"><span>🔍</span> Збільшити</div>
+            </div>
+            <div class="artwork-body">
+              <div>
+                <div class="artwork-meta-row">
+                  <span class="artwork-category">Олійний живопис</span>
+                  <span class="artwork-year">1842</span>
+                </div>
+                <h3 class="artwork-title">Катерина</h3>
+                <p class="artwork-desc">Шедевр українського романтизму. Символічне відображення долі рідної землі.</p>
+              </div>
+              <div class="artwork-source">🏛️ Національний музей Т. Шевченка, Київ</div>
+            </div>
+          </article>
+
+          <!-- Item 2: Автопортрет 1840 -->
+          <article 
+            class="artwork-card reveal" 
+            data-category="portraits"
+            data-title="Автопортрет у юності"
+            data-year="Взимку 1840–1841 рр."
+            data-technique="Олія на полотні · 43 × 35 см"
+            data-desc="Перший автопортрет Шевченка, виконаний олійними фарбами невдовзі після викупу з неволі та видання першого «Кобзаря». Молодий Тарас зобразив себе вільним, романтичним європейським митцем із глибоким проникливим поглядом, повним гідності й таємничості."
+            data-source="Національний музей Тараса Шевченка, Київ (Wikimedia Commons)"
+          >
+            <div class="artwork-thumb-wrap">
+              <img 
+                src="images/self-portrait-1840.jpg" 
+                alt="Автопортрет Тараса Шевченка у юності, 1840 рік" 
+                class="artwork-thumb" 
+                loading="lazy"
+              >
+              <div class="artwork-zoom-hint"><span>🔍</span> Збільшити</div>
+            </div>
+            <div class="artwork-body">
+              <div>
+                <div class="artwork-meta-row">
+                  <span class="artwork-category">Автопортрет</span>
+                  <span class="artwork-year">1840</span>
+                </div>
+                <h3 class="artwork-title">Автопортрет у юності</h3>
+                <p class="artwork-desc">26-річний вільний митець після виходу першого легендарного «Кобзаря».</p>
+              </div>
+              <div class="artwork-source">🏛️ Національний музей Т. Шевченка, Київ</div>
+            </div>
+          </article>
+
+          <!-- Item 3: Селянська родина -->
+          <article 
+            class="artwork-card reveal" 
+            data-category="oil"
+            data-title="Селянська родина"
+            data-year="Травень 1843 року"
+            data-technique="Олія на полотні · 60 × 72.5 см"
+            data-desc="Картина написана під час першої довгоочікуваної подорожі в Україну після 14 років розлуки. Біля чистої білої мазанки, осяяної лагідним надвечірнім сонцем, молоді батьки милуються першими кроками свого малюка, а поруч дрімає вірний собака. У цій роботі Шевченко висловив власну недосяжну мрію про родинне щастя і мирну Україну."
+            data-source="Національний музей Тараса Шевченка, Київ (Wikimedia Commons)"
+          >
+            <div class="artwork-thumb-wrap">
+              <img 
+                src="images/peasant-family-1843.jpg" 
+                alt="Картина Селянська родина Тараса Шевченка, 1843 рік" 
+                class="artwork-thumb" 
+                loading="lazy"
+              >
+              <div class="artwork-zoom-hint"><span>🔍</span> Збільшити</div>
+            </div>
+            <div class="artwork-body">
+              <div>
+                <div class="artwork-meta-row">
+                  <span class="artwork-category">Олійний живопис</span>
+                  <span class="artwork-year">1843</span>
+                </div>
+                <h3 class="artwork-title">Селянська родина</h3>
+                <p class="artwork-desc">Тепла поетична ода українській родині та родинному затишку.</p>
+              </div>
+              <div class="artwork-source">🏛️ Національний музей Т. Шевченка, Київ</div>
+            </div>
+          </article>
+
+          <!-- Item 4: Циганка-ворожка -->
+          <article 
+            class="artwork-card reveal" 
+            data-category="graphic"
+            data-title="Циганка-ворожка"
+            data-year="Вересень 1841 року"
+            data-technique="Акварель на папері «бристоль» · 26.5 × 20.7 см"
+            data-desc="За цю віртуозну акварель Академічна рада Петербурзької Академії мистецтв 26 вересня 1841 року нагородила Шевченка другою срібною медаллю. Картина демонструє видатну колористичну майстерність молодого Тараса та його тонке володіння світлотінню."
+            data-source="Національний музей Тараса Шевченка, Київ (Wikimedia Commons)"
+          >
+            <div class="artwork-thumb-wrap">
+              <img 
+                src="images/gypsy-fortuneteller-1841.jpg" 
+                alt="Акварель Циганка-ворожка Тараса Шевченка, 1841 рік" 
+                class="artwork-thumb" 
+                loading="lazy"
+              >
+              <div class="artwork-zoom-hint"><span>🔍</span> Збільшити</div>
+            </div>
+            <div class="artwork-body">
+              <div>
+                <div class="artwork-meta-row">
+                  <span class="artwork-category">Акварель</span>
+                  <span class="artwork-year">1841</span>
+                </div>
+                <h3 class="artwork-title">Циганка-ворожка</h3>
+                <p class="artwork-desc">Твір, за який Академія мистецтв нагородила Шевченка срібною медаллю.</p>
+              </div>
+              <div class="artwork-source">🏛️ Академічна збірка (НМТШ)</div>
+            </div>
+          </article>
+
+          <!-- Item 5: Пожежа в степу -->
+          <article 
+            class="artwork-card reveal" 
+            data-category="graphic"
+            data-title="Пожежа в степу"
+            data-year="Травень 1848 року"
+            data-technique="Папір, акварель · 15.6 × 27.4 см"
+            data-desc="Створено під час важкої Аральської наукової експедиції, куди Шевченка включили завдяки капітану Олексію Бутакову як художника-картографа. Малюнок передає містичну силу нічного степового палу: дике полум'я на горизонті та силуети вершників-казахів створюють вражаючу експресію."
+            data-source="Національний музей Тараса Шевченка, Київ (Wikimedia Commons)"
+          >
+            <div class="artwork-thumb-wrap">
+              <img 
+                src="images/fire-in-steppe-1848.jpg" 
+                alt="Акварель Пожежа в степу Тараса Шевченка, 1848 рік" 
+                class="artwork-thumb" 
+                loading="lazy"
+              >
+              <div class="artwork-zoom-hint"><span>🔍</span> Збільшити</div>
+            </div>
+            <div class="artwork-body">
+              <div>
+                <div class="artwork-meta-row">
+                  <span class="artwork-category">Акварель заслання</span>
+                  <span class="artwork-year">1848</span>
+                </div>
+                <h3 class="artwork-title">Пожежа в степу</h3>
+                <p class="artwork-desc">Нічний пал у Казахському степу. Робота часів Аральської експедиції.</p>
+              </div>
+              <div class="artwork-source">🏛️ Аральська серія (НМТШ)</div>
+            </div>
+          </article>
+
+          <!-- Item 6: Портрет Айри Олдріджа -->
+          <article 
+            class="artwork-card reveal" 
+            data-category="graphic"
+            data-title="Портрет трагіка Айри Олдріджа"
+            data-year="Грудень 1858 року"
+            data-technique="Папір, італійський олівець, пастель · 35.6 × 28.3 см"
+            data-desc="Айра Олдрідж — знаменитий афроамериканський актор, який підкорив Європу ролями Отелло, Короля Ліра та Шейлока. Коли він приїхав на гастролі до Петербурга, вони з Шевченком миттєво зблизилися. Колишній кріпак і син чорношкірих американських рабів не знали мови один одного, але спілкувалися через перекладача і музику, ставши вірними друзями."
+            data-source="Державний музей Тараса Шевченка (Wikimedia Commons)"
+          >
+            <div class="artwork-thumb-wrap">
+              <img 
+                src="images/ira-aldridge-1858.jpg" 
+                alt="Портрет Айри Олдріджа, виконаний Тарасом Шевченком, 1858 рік" 
+                class="artwork-thumb" 
+                loading="lazy"
+              >
+              <div class="artwork-zoom-hint"><span>🔍</span> Збільшити</div>
+            </div>
+            <div class="artwork-body">
+              <div>
+                <div class="artwork-meta-row">
+                  <span class="artwork-category">Графіка / Пастель</span>
+                  <span class="artwork-year">1858</span>
+                </div>
+                <h3 class="artwork-title">Портрет Айри Олдріджа</h3>
+                <p class="artwork-desc">Зворушливе свідчення дружби двох вільних людей різних континентів.</p>
+              </div>
+              <div class="artwork-source">🏛️ Національний музей Т. Шевченка</div>
+            </div>
+          </article>
+
+          <!-- Item 7: Кобзар 1840 фронтиспис -->
+          <article 
+            class="artwork-card reveal" 
+            data-category="graphic"
+            data-title="Фронтиспис першого «Кобзаря»"
+            data-year="1840 рік"
+            data-technique="Гравюра / офорт (малюнок Василя Штернберга)"
+            data-desc="Ілюстрація до першого видання «Кобзаря» 1840 року. Старий сліпий кобзар із кобзою сидить на могилі, а поруч — малий хлопчик-поводир і самотній собака. Цей образ став візитівкою шевченківської естетики та метафорою історичної пам'яті українського народу."
+            data-source="Збірка першодруків НАН України (Wikimedia Commons)"
+          >
+            <div class="artwork-thumb-wrap">
+              <img 
+                src="images/kobzar-1840.jpg" 
+                alt="Фронтиспис першого видання Кобзаря 1840 року" 
+                class="artwork-thumb" 
+                loading="lazy"
+              >
+              <div class="artwork-zoom-hint"><span>🔍</span> Збільшити</div>
+            </div>
+            <div class="artwork-body">
+              <div>
+                <div class="artwork-meta-row">
+                  <span class="artwork-category">Книжкова графіка</span>
+                  <span class="artwork-year">1840</span>
+                </div>
+                <h3 class="artwork-title">Фронтиспис першого «Кобзаря»</h3>
+                <p class="artwork-desc">Знаковий образ кобзаря з бандурою, що відкрив еру нової літератури.</p>
+              </div>
+              <div class="artwork-source">🏛️ Відділ рідкісних видань НАН України</div>
+            </div>
+          </article>
+
+          <!-- Item 8: Фото 1859 -->
+          <article 
+            class="artwork-card reveal" 
+            data-category="photo"
+            data-title="Тарас Шевченко у смушевій шапці"
+            data-year="Травень 1859 року"
+            data-technique="Оригінальна фотографія · Фотоательє Андрія Деньєра"
+            data-desc="Один із найвідоміших прижиттєвих фотопортретів Тараса Шевченка. Зроблений у Санкт-Петербурзі видатним майстром фотографії Андрієм Деньєром незадовго до останньої поїздки Шевченка в Україну. Цей образ у кожусі став канонічним і найупізнаванішим у світі."
+            data-source="Центральний державний історичний архів України (Wikimedia Commons)"
+          >
+            <div class="artwork-thumb-wrap">
+              <img 
+                src="images/portrait-1859.jpg" 
+                alt="Оригінальна світлина Тараса Шевченка 1859 року" 
+                class="artwork-thumb" 
+                loading="lazy"
+              >
+              <div class="artwork-zoom-hint"><span>🔍</span> Збільшити</div>
+            </div>
+            <div class="artwork-body">
+              <div>
+                <div class="artwork-meta-row">
+                  <span class="artwork-category">Історична фотографія</span>
+                  <span class="artwork-year">1859</span>
+                </div>
+                <h3 class="artwork-title">Портрет у смушевій шапці</h3>
+                <p class="artwork-desc">Легендарна світлина А. Деньєра, зроблена за 2 роки до смерті поета.</p>
+              </div>
+              <div class="artwork-source">🏛️ ЦДІАК України, Київ</div>
+            </div>
+          </article>
+
+          <!-- Item 9: Останній автопортрет 1861 -->
+          <article 
+            class="artwork-card reveal" 
+            data-category="portraits"
+            data-title="Останній автопортрет"
+            data-year="Січень 1861 року"
+            data-technique="Олія на полотні · 59 × 49 см"
+            data-desc="Останній живописний автопортрет, написаний Шевченком за кілька тижнів до смерті у своїй майстерні при Академії мистецтв. Попри важку хворобу, погляд митця випромінює спокій, незламну внутрішню силу та філософську глибину людини, яка повністю виконала своє покликання на землі."
+            data-source="Національний музей Тараса Шевченка, Київ (Wikimedia Commons)"
+          >
+            <div class="artwork-thumb-wrap">
+              <img 
+                src="images/self-portrait-1861.jpg" 
+                alt="Останній автопортрет Тараса Шевченка, 1861 рік" 
+                class="artwork-thumb" 
+                loading="lazy"
+              >
+              <div class="artwork-zoom-hint"><span>🔍</span> Збільшити</div>
+            </div>
+            <div class="artwork-body">
+              <div>
+                <div class="artwork-meta-row">
+                  <span class="artwork-category">Автопортрет</span>
+                  <span class="artwork-year">1861</span>
+                </div>
+                <h3 class="artwork-title">Останній автопортрет</h3>
+                <p class="artwork-desc">Створений за кілька тижнів до смерті. Погляд незламного генія у вічність.</p>
+              </div>
+              <div class="artwork-source">🏛️ Національний музей Т. Шевченка, Київ</div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom Nav Callout -->
+    <section class="section" style="padding-top: 30px;">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <span class="badge">Продовжити подорож</span>
+          <h3>Бажаєте дізнатися про літературний прорив Кобзаря?</h3>
+          <p>
+            Перейдіть до розділу «Творчість і спадок», де зібрано аналіз культових поем, руйнування поширених міфів про поета та його вплив на світову культуру.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
+            <a href="works.html" class="btn btn-primary">Перейти до розділу «Творчість» →</a>
+            <a href="index.html" class="btn btn-outline">← Повернутися на головну</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Interactive Lightbox Modal -->
+  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Детальний перегляд твору">
+    <div class="lightbox-content">
+      <button class="lightbox-close-btn" aria-label="Закрити перегляд" title="Закрити (Esc)">✕</button>
+      <button class="lightbox-nav-btn lightbox-prev" aria-label="Попередній твір" title="Попередній (←)">❮</button>
+      <button class="lightbox-nav-btn lightbox-next" aria-label="Наступний твір" title="Наступний (→)">❯</button>
+
+      <div class="lightbox-image-wrap">
+        <img src="" alt="" class="lightbox-image">
+      </div>
+
+      <div class="lightbox-info">
+        <div>
+          <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px;">
+            <span class="badge lightbox-year"></span>
+            <span class="lightbox-technique" style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-muted);"></span>
+          </div>
+          <h2 class="lightbox-title" style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 800; margin-bottom: 16px; color: var(--accent-yellow);"></h2>
+          <p class="lightbox-desc" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.65; margin-bottom: 20px;"></p>
+        </div>
+
+        <div style="border-top: 1px solid var(--border-subtle); padding-top: 14px;">
+          <div style="font-size: 0.78rem; font-family: var(--font-mono); color: var(--text-muted); margin-bottom: 4px;">ПЕРШОДЖЕРЕЛО / ЗБЕРІГАННЯ:</div>
+          <div class="lightbox-source" style="font-size: 0.85rem; font-weight: 600; color: var(--text-primary);"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="brand-logo">
+            <span class="brand-monogram">ТШ</span>
+            <span>ТАРАС ШЕВЧЕНКО</span>
+          </div>
+          <p>
+            Цифрова експозиція образотворчого мистецтва Кобзаря. Усі зображення належать до суспільного надбання (Public Domain).
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h5>Навігація</h5>
+          <ul class="footer-links">
+            <li><a href="index.html">Головна (Біографія)</a></li>
+            <li><a href="index.html#timeline">Таймлайн</a></li>
+            <li><a href="gallery.html">Галерея картин</a></li>
+            <li><a href="works.html">Творчість і міфи</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Джерела та музеї</h5>
+          <ul class="footer-links">
+            <li><a href="https://museumshevchenko.org.ua/" target="_blank" rel="noopener noreferrer">Музей Т. Шевченка (Київ) ↗</a></li>
+            <li><a href="https://commons.wikimedia.org/wiki/Category:Paintings_by_Taras_Shevchenko" target="_blank" rel="noopener noreferrer">Збірка Wikimedia Commons ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>Галерея шедеврів Тараса Шевченка · 1814 — 1861</div>
+        <div style="color: var(--accent-yellow);">Краса рятує світ 🇺🇦</div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Повернутися нагору" title="Нагору">↑</button>
+  <div id="toast-notice" class="toast-notice" role="status" aria-live="polite"></div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
